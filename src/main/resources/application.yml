@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: bank-transactions
+  mongodb:
+    uri: "${SPRING_MONGODB_URI:${MONGODB_URI:mongodb://localhost:27017/bank_transactions}}"
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+app:
+  max-rows: 10000
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    org.example: DEBUG

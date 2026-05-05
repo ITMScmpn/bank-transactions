@@ -1,0 +1,98 @@
+# ──────────────────────────────────────────────
+# Gradle
+# ──────────────────────────────────────────────
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# ──────────────────────────────────────────────
+# IntelliJ IDEA
+# ──────────────────────────────────────────────
+.idea/
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ──────────────────────────────────────────────
+# Spring Boot / Java
+# ──────────────────────────────────────────────
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.pid
+*.pid.lock
+hs_err_pid*
+replay_pid*
+
+# Spring Boot DevTools restart trigger
+.reloadtrigger
+
+# ──────────────────────────────────────────────
+# Środowiskowe / sekrety — NIGDY do repo
+# ──────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.properties
+application-secret*.yml
+application-secret*.properties
+**/src/main/resources/application-local.*
+
+# ──────────────────────────────────────────────
+# Docker
+# ──────────────────────────────────────────────
+# lokalne overrides docker-compose (np. porty, hasła dev)
+docker-compose.override.yml
+
+# ──────────────────────────────────────────────
+# System operacyjny
+# ──────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ──────────────────────────────────────────────
+# Edytory / narzędzia
+# ──────────────────────────────────────────────
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Kotlin (IntelliJ artefakty kompilacji)
+.kotlin/
+
