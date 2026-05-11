@@ -3,7 +3,7 @@ package com.banktransactions.features.importing.application.service;
 import com.banktransactions.features.importing.application.port.in.GetImportStatusUseCase;
 import com.banktransactions.features.importing.application.port.out.ImportJobRepositoryPort;
 import com.banktransactions.features.importing.domain.model.ImportJob;
-import com.banktransactions.infrastructure.exception.ImportJobNotFoundException;
+import com.banktransactions.features.importing.domain.exception.ImportJobNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,4 +1,4 @@
-package com.banktransactions.infrastructure.exception;
+package com.banktransactions.features.importing.domain.exception;
 
 import java.util.Set;
 

@@ -1,8 +1,8 @@
 package com.banktransactions.features.importing.adapter.out.csv;
 
 import com.banktransactions.features.importing.application.port.out.CsvReaderPort;
-import com.banktransactions.infrastructure.exception.InvalidCsvStructureException;
-import com.banktransactions.infrastructure.exception.TooManyRowsException;
+import com.banktransactions.features.importing.domain.exception.InvalidCsvStructureException;
+import com.banktransactions.features.importing.domain.exception.TooManyRowsException;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;

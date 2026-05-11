@@ -4,7 +4,7 @@ import com.banktransactions.features.importing.application.port.in.UploadTransac
 import com.banktransactions.features.importing.application.port.out.AsyncImportTriggerPort;
 import com.banktransactions.features.importing.application.port.out.ImportJobRepositoryPort;
 import com.banktransactions.features.importing.domain.model.ImportJob;
-import com.banktransactions.infrastructure.exception.UnsupportedFileTypeException;
+import com.banktransactions.features.importing.domain.exception.UnsupportedFileTypeException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
